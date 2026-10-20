@@ -1,0 +1,16 @@
+{
+  "account_id": "413198903",
+  "title": "【测试】网盘资料自动发货演示（非真实商品）",
+  "description": "本商品仅用于自动发货系统联调测试，不代表真实可售内容。\\n\\n购买说明：\\n1. 拍下并付款后，系统将自动在聊天中发送网盘测试链接；\\n2. 链接为演示用途，请勿当作正式资料；\\n3. 如需测试客服，可发送：在吗 / 怎么发货 / 补发。\\n\\n虚拟发货，付款即自动交付。",
+  "price": 1,
+  "original_price": 9.9,
+  "category": "其他闲置",
+  "images": [
+    "/app/static/uploads/products/822c6b7e447c485fac0f048edb102335.png",
+    "/app/static/uploads/products/e5903650ec484ae6a8bc451214009497.png"
+  ],
+  "address": "广东省深圳市南山区",
+  "delivery_method": "express",
+  "postage": 0,
+  "condition": "全新"
+}

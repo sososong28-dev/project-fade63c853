@@ -1,0 +1,52 @@
+{
+  "ranAt": "2026-07-29T00:56:15.735Z",
+  "steps": [
+    {
+      "id": 1,
+      "name": "服务健康",
+      "passed": true,
+      "note": "自动通过",
+      "excerpt": "{\n  \"backend-web\": {\n    \"ok\": true,\n    \"status\": 200,\n    \"body\": \"{\\\"success\\\":true,\\\"code\\\":200,\\\"message\\\":\\\"服务运行正常\\\",\\\"data\\\":{\\\"service\\\":\\\"Xianyu Backend-Web Service\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"status\\\":\\\"running\\\",\\\"database\\\":\\\"connected\\\"}}\"\n  },\n  \"websocket\": {\n    \"ok\": true,\n    \"status"
+    },
+    {
+      "id": 2,
+      "name": "后台登录",
+      "passed": true,
+      "note": "自动通过",
+      "excerpt": "登录成功，token 已写入 D:\\咸鱼自动化\\scripts\\.token\n"
+    },
+    {
+      "id": 3,
+      "name": "卡券库存",
+      "passed": true,
+      "note": "自动通过",
+      "excerpt": "{\n  \"list\": [\n    {\n      \"id\": 2,\n      \"user_id\": 1,\n      \"item_id\": null,\n      \"name\": \"虚拟品-网盘链接(测试)\",\n      \"type\": \"text\",\n      \"description\": \"可复用网盘链接模板\",\n      \"enabled\": true,\n      \"delay_seconds\": 2,\n      \"delivery_count\": 0,\n      \"price\": null,\n      \"is_dockable\": false,\n      \"fee_"
+    },
+    {
+      "id": 4,
+      "name": "扫码会话可生成",
+      "passed": true,
+      "note": "自动通过",
+      "excerpt": "二维码图片已保存: D:\\咸鱼自动化\\config\\qr-login.png\n扫码会话已保存: D:\\咸鱼自动化\\config\\qr-login-session.json\n{\n  \"success\": true,\n  \"message\": \"二维码生成成功\",\n  \"data\": {\n    \"session_id\": \"462dedf9-e40c-4861-b057-dcddfd953f72\",\n    \"qr_code_url\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAcIAAAHCAQAAAABUY/ToAAAEFUlEQVR4n"
+    },
+    {
+      "id": 5,
+      "name": "就绪报告",
+      "passed": true,
+      "note": "自动通过",
+      "excerpt": "vice\\\":\\\"Xianyu Backend-Web Service\\\",\\\"version\\\":\\\"0.1.0\\\",\\\"status\\\":\\\"running\\\",\\\"database\\\":\\\"connected\\\"}}\"\n  },\n  \"websocket\": {\n    \"ok\": true,\n    \"status\": 200,\n    \"body\": \"{\\\"success\\\":true,\\\"code\\\":200,\\\"message\\\":\\\"服务运行正常\\\",\\\"data\\\":{\\\"service\\\":\\\"Xianyu WebSocket Service\\\",\\\"status\\\":\\"
+    }
+  ],
+  "manualRemaining": [
+    "闲鱼 App 扫码接入卖家账号（config/qr-login.png 或 http://127.0.0.1:9000）",
+    "wait-account 后确认 WebSocket chat-accounts 在线",
+    "同步/发布测试商品并 bind-card",
+    "买家询价关键词命中",
+    "付款后自动收到卡密/链接"
+  ],
+  "summary": {
+    "autoPassed": 5,
+    "autoTotal": 5,
+    "blockedOn": "真实闲鱼账号扫码（当前 cookies 为空）"
+  }
+}

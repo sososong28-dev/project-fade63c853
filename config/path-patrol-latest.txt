@@ -1,0 +1,17 @@
+闲鱼路径巡检  2026-09-15T03:32:50.817Z
+结论: FAIL  (失败8 / 警告1)
+
+[FAIL] 服务 backend-web: fetch failed
+[FAIL] 服务 websocket: fetch failed
+[FAIL] 服务 scheduler: fetch failed
+[FAIL] 账号读取: fetch failed
+[FAIL] 自动回复日志: fetch failed
+[WARN] 发布日志: fetch failed
+[FAIL] 卡券#23: fetch failed
+[FAIL] 卡券#17: fetch failed
+[FAIL] 卡券#13: fetch failed
+
+后台常看：http://127.0.0.1:9000 → 自动回复日志 / 商品发布日志 / 卡券管理 / 账号连接
+复跑：node scripts/patrol-path.js   或   node scripts/api-client.js patrol
+
+XIANYU_PATH|FAIL|8|1|WS=? 今日回复=? 最新回复=无 发布=无 FAIL项=health_backend-web,health_websocket,health_scheduler,cookies,reply_recent,card_23,card_17,card_13 WARN项=publish_latest

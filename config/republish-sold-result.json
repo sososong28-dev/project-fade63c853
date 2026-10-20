@@ -1,0 +1,14 @@
+{
+  "finishedAt": "2026-08-03T10:47:17.127Z",
+  "results": [],
+  "errors": [
+    {
+      "key": "elden-ultimate",
+      "error": "fetch failed"
+    },
+    {
+      "key": "pm10",
+      "error": "发布失败: Page.goto: Timeout 30000ms exceeded.\nCall log:\n  - navigating to \"https://www.goofish.com/\", waiting until \"networkidle\"\n"
+    }
+  ]
+}

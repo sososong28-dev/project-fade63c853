@@ -1,0 +1,16 @@
+{
+  "title": "【测试】网盘资料自动发货演示（非真实商品）",
+  "price": 1,
+  "material_id": 1,
+  "account_id": "413198903",
+  "cover_local": [
+    "config/test-virtual-cover.png",
+    "config/test-virtual-detail.png"
+  ],
+  "cover_urls": [
+    "http://127.0.0.1:8089/static/uploads/products/822c6b7e447c485fac0f048edb102335.png",
+    "http://127.0.0.1:8089/static/uploads/products/e5903650ec484ae6a8bc451214009497.png"
+  ],
+  "card_to_bind": 2,
+  "auto_publish_error": "Playwright 访问 login.taobao.com 连接中断，需在后台手动发布或闲鱼App上架后同步"
+}

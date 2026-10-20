@@ -1,0 +1,12 @@
+{
+  "createdAt": "2026-07-29T00:54:50.891Z",
+  "keyCard": {
+    "id": 1,
+    "message": "卡券创建成功"
+  },
+  "linkCard": {
+    "id": 2,
+    "message": "卡券创建成功"
+  },
+  "note": "创建卡券后，在后台「卡券管理」把卡券绑定到具体商品 item_id；或使用 bind-card 命令"
+}

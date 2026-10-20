@@ -1,0 +1,37 @@
+{
+  "accountId": "413198903",
+  "payload": {
+    "keywords": [
+      {
+        "keyword": "你好",
+        "reply": "您好，这是自动客服。虚拟商品拍下付款后会自动发货，请稍等几秒～",
+        "item_id": null
+      },
+      {
+        "keyword": "在吗",
+        "reply": "在的！虚拟资料付款后自动发货，有问题直接发消息即可。",
+        "item_id": null
+      },
+      {
+        "keyword": "怎么发货",
+        "reply": "拍下并完成付款后，系统会自动把卡密/链接发到本聊天窗口，无需催促。",
+        "item_id": null
+      },
+      {
+        "keyword": "卡密",
+        "reply": "卡密在您付款成功后自动发送。若超时未收到，请回复「补发」。",
+        "item_id": null
+      },
+      {
+        "keyword": "补发",
+        "reply": "已记录您的补发请求。请稍等，系统会按订单自动补发；若仍未收到请留下订单号。",
+        "item_id": null
+      }
+    ]
+  },
+  "result": {
+    "success": true,
+    "message": "关键词保存成功",
+    "data": null
+  }
+}

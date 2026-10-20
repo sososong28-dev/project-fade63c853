@@ -1,0 +1,74 @@
+{
+  "checkedAt": "2026-09-15T03:32:50.817Z",
+  "overall": "fail",
+  "checks": [
+    {
+      "id": "health_backend-web",
+      "name": "服务 backend-web",
+      "ok": false,
+      "level": "error",
+      "detail": "fetch failed"
+    },
+    {
+      "id": "health_websocket",
+      "name": "服务 websocket",
+      "ok": false,
+      "level": "error",
+      "detail": "fetch failed"
+    },
+    {
+      "id": "health_scheduler",
+      "name": "服务 scheduler",
+      "ok": false,
+      "level": "error",
+      "detail": "fetch failed"
+    },
+    {
+      "id": "cookies",
+      "name": "账号读取",
+      "ok": false,
+      "level": "error",
+      "detail": "fetch failed"
+    },
+    {
+      "id": "reply_recent",
+      "name": "自动回复日志",
+      "ok": false,
+      "level": "error",
+      "detail": "fetch failed"
+    },
+    {
+      "id": "publish_latest",
+      "name": "发布日志",
+      "ok": false,
+      "level": "warn",
+      "detail": "fetch failed"
+    },
+    {
+      "id": "card_23",
+      "name": "卡券#23",
+      "ok": false,
+      "level": "error",
+      "detail": "fetch failed"
+    },
+    {
+      "id": "card_17",
+      "name": "卡券#17",
+      "ok": false,
+      "level": "error",
+      "detail": "fetch failed"
+    },
+    {
+      "id": "card_13",
+      "name": "卡券#13",
+      "ok": false,
+      "level": "error",
+      "detail": "fetch failed"
+    }
+  ],
+  "summary": {},
+  "failCount": 8,
+  "warnCount": 1,
+  "machineLine": "XIANYU_PATH|FAIL|8|1|WS=? 今日回复=? 最新回复=无 发布=无 FAIL项=health_backend-web,health_websocket,health_scheduler,cookies,reply_recent,card_23,card_17,card_13 WARN项=publish_latest",
+  "oneLine": "WS=? 今日回复=? 最新回复=无 发布=无 FAIL项=health_backend-web,health_websocket,health_scheduler,cookies,reply_recent,card_23,card_17,card_13 WARN项=publish_latest"
+}

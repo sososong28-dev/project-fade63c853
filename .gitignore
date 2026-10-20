@@ -1,0 +1,36 @@
+node_modules/
+scripts/.token
+xianyu-auto-reply/
+config/qr-login.png
+config/qr-login-session.json
+openapi.json
+*.log
+
+# 凭据 / 会话 / 认证二维码
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.p12
+*.pfx
+*.key
+scripts/login-resp.json
+config/qr-face-verify*
+config/face-verify-qr.png
+
+# 依赖与缓存
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# 第三方二进制
+tools/kuake/*.exe
+
+# 第三方存档/编辑器与嵌套仓库，仅上传自写说明
+怪物猎人存档研究包/*
+!怪物猎人存档研究包/README-先看这里.md
+
+# 含第三方版权扫描图，仅本地保留
+upload-packs/2026-08-15-huatai-guides/

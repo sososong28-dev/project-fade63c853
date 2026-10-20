@@ -1,0 +1,21 @@
+{
+  "title": "怪物猎人世界典藏攻略PDF｜拍下自动发网盘",
+  "description": "打怪总翻车、配装看花眼？\\n我把《怪物猎人世界》干货整理成一本典藏攻略PDF，随时能翻。\\n\\n你能拿到什么\\n电子PDF（非实体书），整理向攻略，方便检索。\\n\\n怎么发货\\n付款后几秒，聊天自动发百度网盘链接和提取码。\\n建议马上转存；没收到回「补发」或「网盘」即可。\\n\\n小提示\\n本人整理分享；游戏版权归原厂商。\\n适合想快速上手、查配装思路的猎人～",
+  "publish": {
+    "success": true,
+    "message": "商品发布成功（已跳转到商品详情页），已自动获取 3 个商品，入库 3 个商品",
+    "data": {
+      "item_url": "https://www.goofish.com/item?id=1068891487889&categoryId=&spm=a21ybx.publish.0.0",
+      "item_id": "1068891487889",
+      "log_id": 6,
+      "sync_status": "success",
+      "sync_message": "已自动获取 3 个商品，入库 3 个商品",
+      "sync_total_count": 3,
+      "sync_saved_count": 3
+    }
+  },
+  "sources": [
+    "JuneYaooo/xhs-writer-skill",
+    "kane25/brand-xiaohongshu-copywriting-skill"
+  ]
+}

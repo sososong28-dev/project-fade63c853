@@ -1,0 +1,65 @@
+{
+  "title": "虚拟品闭环自测清单",
+  "steps": [
+    {
+      "id": 1,
+      "name": "服务健康",
+      "cmd": "node scripts/api-client.js health",
+      "doneHint": "四项 ok=true"
+    },
+    {
+      "id": 2,
+      "name": "后台登录",
+      "cmd": "node scripts/api-client.js login",
+      "doneHint": "token 写入成功"
+    },
+    {
+      "id": 3,
+      "name": "接入闲鱼账号",
+      "cmd": "浏览器打开 http://127.0.0.1:9000 扫码，或 qr-generate",
+      "doneHint": "cookies 列表非空且 WS 已连接"
+    },
+    {
+      "id": 4,
+      "name": "导入卡密/链接卡券",
+      "cmd": "node scripts/api-client.js seed-cards",
+      "doneHint": "卡券管理可见两条测试卡券"
+    },
+    {
+      "id": 5,
+      "name": "同步或发布测试商品",
+      "cmd": "后台「商品管理」拉取账号商品，或「商品发布」",
+      "doneHint": "拿到 item_id"
+    },
+    {
+      "id": 6,
+      "name": "绑定卡券到商品",
+      "cmd": "node scripts/api-client.js bind-card <cardId> <itemId>",
+      "doneHint": "商品已关联卡券"
+    },
+    {
+      "id": 7,
+      "name": "配置客服话术",
+      "cmd": "node scripts/api-client.js seed-keywords <accountId> && seed-default-reply <accountId>",
+      "doneHint": "关键词与默认回复生效"
+    },
+    {
+      "id": 8,
+      "name": "询价测试",
+      "manual": "用另一账号对商品发「在吗」「怎么发货」",
+      "doneHint": "自动回复命中"
+    },
+    {
+      "id": 9,
+      "name": "付款发货测试",
+      "manual": "拍下付款（可用低价测试品）",
+      "doneHint": "聊天收到卡密/链接，订单变为已发货"
+    },
+    {
+      "id": 10,
+      "name": "补发验证",
+      "manual": "回复「补发」或后台手动发货",
+      "doneHint": "可再次收到内容且不重复错发"
+    }
+  ]
+}
