@@ -1,6 +1,17 @@
-# 闲鱼虚拟品自动化运营
+# 闲鱼自动化运营系统（二次开发版）
 
-基于 [zhinianboke/xianyu-auto-reply](https://github.com/zhinianboke/xianyu-auto-reply) 的本地部署，覆盖虚拟商品：**上架 → 客服 → 自动发货**。
+> **项目性质：本项目是基于 [zhinianboke/xianyu-auto-reply](https://github.com/zhinianboke/xianyu-auto-reply) 的二次开发版本，不是原作者官方仓库。**
+>
+> 底层项目源码、原始 README 和许可证均保留在本仓库中；二次开发在原有 FastAPI + React + MySQL + Redis + WebSocket + Scheduler + Playwright 系统上进行，原作者及许可证归属不变。
+
+## 原项目文件
+
+- 底层源码：[`xianyu-auto-reply/`](xianyu-auto-reply/)
+- 原始项目说明：[`xianyu-auto-reply/README.md`](xianyu-auto-reply/README.md)
+- 原项目许可证：[`xianyu-auto-reply/LICENSE`](xianyu-auto-reply/LICENSE)
+- 上游仓库：[zhinianboke/xianyu-auto-reply](https://github.com/zhinianboke/xianyu-auto-reply)
+
+底层目录保留上游源码快照并叠加本项目的二次开发改动；原始 README 用于保留上游项目说明，具体新增能力以本文件为准。
 
 ## 访问地址
 
@@ -17,7 +28,7 @@
 
 ```text
 D:\咸鱼自动化\
-├── xianyu-auto-reply\     # 开源主系统（Docker 已启动）
+├── xianyu-auto-reply\     # 底层原项目源码、原始 README、LICENSE 与二次开发改动
 ├── scripts\api-client.js  # 运维 CLI（登录/扫码/卡券/客服/就绪检查）
 ├── scripts\health-auto.js # 计划任务入口（先 login 再巡检/重连）
 ├── docs\项目索引.md       # 值班入口、铁律、事故复盘
@@ -25,6 +36,16 @@ D:\咸鱼自动化\
 ├── .workbuddy\skills\     # WorkBuddy 独立运营与上架 Skill
 └── .cursor\skills\        # Cursor 本地 Skill
 ```
+
+## 二次开发内容
+
+| 模块 | 本项目新增或调整的能力 |
+|------|------------------------|
+| WorkBuddy `xianyu-ops` | 只读运营、行情整理、上架草稿、回复草稿和本地日报 |
+| WorkBuddy `xianyu-listing` | 人工预览与显式确认后的单品上架、图片哈希确认、幂等键、本地审计和重复发布保护 |
+| 商品发布 | 缺少平台分类 ID 时，通过内部 `/category/recommend` 接口自动补全 |
+| 稳定性 | 远程 Token 余额不足熔断、数据罗盘权限错误分类、前端健康检查修正 |
+| 运维与安全 | 统一 JSON CLI、回归测试、凭据与本地运行数据排除规则 |
 
 ## WorkBuddy Skill
 

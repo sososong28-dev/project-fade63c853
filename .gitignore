@@ -11,6 +11,10 @@ openapi.json
 .env.*
 !.env.example
 !.env.sample
+!xianyu-auto-reply/frontend/.env.development
+!xianyu-auto-reply/frontend/.env.production
+!xianyu-auto-reply/promotion/frontend/.env.development
+!xianyu-auto-reply/promotion/frontend/.env.production
 *.pem
 *.p12
 *.pfx
