@@ -21,9 +21,27 @@ D:\咸鱼自动化\
 ├── scripts\api-client.js  # 运维 CLI（登录/扫码/卡券/客服/就绪检查）
 ├── scripts\health-auto.js # 计划任务入口（先 login 再巡检/重连）
 ├── docs\项目索引.md       # 值班入口、铁律、事故复盘
-├── config\                # 卡密、扫码会话、就绪报告、巡检日志
+├── config\                # 配置模板与本地运行结果（凭据不入库）
+├── .workbuddy\skills\     # WorkBuddy 独立运营与上架 Skill
 └── .cursor\skills\        # Cursor 本地 Skill
 ```
+
+## WorkBuddy Skill
+
+- `xianyu-ops`：只读运营与草稿生成，不自动执行外部写操作。
+- `xianyu-listing`：人工预览并显式确认后的单品上架；缺少平台分类 ID 时自动通过内部推荐接口补全。
+
+```bash
+# 只生成上架预览，不上传图片、不发布商品
+node .workbuddy/skills/xianyu-listing/scripts/xianyu-listing.js publish --input <商品.json>
+
+# 人工核对后，使用预览返回的 review_id 显式确认
+node .workbuddy/skills/xianyu-listing/scripts/xianyu-listing.js publish --input <商品.json> --confirm <review_id>
+```
+
+上架 Skill 使用本地审计与幂等键防止重复发布；结果不确定时必须先人工核查，不得直接重试。`doctor` 不是上架前置条件。
+
+> 版本说明：本仓库保存宿主机当前源码快照。既有容器镜像可能包含尚未回写到宿主机的文件；重建或替换容器前必须先做差异核验，不得直接用旧源码覆盖运行中的新功能。
 
 ## 一键运维命令
 

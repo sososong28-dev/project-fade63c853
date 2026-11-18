@@ -1,0 +1,16 @@
+{
+  "account_id": "your-account-id",
+  "title": "示例闲置机械键盘",
+  "description": "人工巡检后填写的真实商品描述。",
+  "price": 99,
+  "original_price": 129,
+  "category": "机械键盘",
+  "images": [
+    ".workbuddy/skills/xianyu-listing/assets/example-cover.png"
+  ],
+  "address": "广东省深圳市南山区",
+  "delivery_method": "express",
+  "postage": 0,
+  "condition": "九成新",
+  "brand": "示例品牌"
+}

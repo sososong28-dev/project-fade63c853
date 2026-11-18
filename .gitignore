@@ -1,6 +1,6 @@
 node_modules/
 scripts/.token
-xianyu-auto-reply/
+# 主系统源码纳入根仓库快照，运行数据由子目录 .gitignore 排除
 config/qr-login.png
 config/qr-login-session.json
 openapi.json
@@ -34,3 +34,21 @@ tools/kuake/*.exe
 
 # 含第三方版权扫描图，仅本地保留
 upload-packs/2026-08-15-huatai-guides/
+
+# WorkBuddy 本地运行数据（仅技能源码入库）
+.workbuddy/audit/
+.workbuddy/backups/
+.workbuddy/dist/
+.workbuddy/memory/
+.workbuddy/*.log
+
+# 真实账号凭据与临时测试产物
+config/cookie-*
+config/openapi-live.json
+config/listing-live-test-*
+config/disney-*
+config/xianyu_publisher.original.py
+scripts/gen-disney-covers.py
+scripts/publish-disney.js
+draft_*/
+tools/baidu/

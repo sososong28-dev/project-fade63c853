@@ -1,0 +1,24 @@
+{
+  "account_id": "fixture-account",
+  "conversations": {
+    "success": true,
+    "data": {
+      "conversations": [
+        {"cid": "cid-delivery", "itemTitle": "PPT 模板", "unreadCount": 1, "lastMessageSummary": "怎么发货"},
+        {"cid": "cid-price", "itemTitle": "机械键盘", "unreadCount": 2, "lastMessageSummary": "可以便宜吗"},
+        {"cid": "cid-aftersale", "itemTitle": "课程资料", "unreadCount": 1, "lastMessageSummary": "我没有收到链接"},
+        {"cid": "cid-read", "itemTitle": "已读商品", "unreadCount": 0, "lastMessageSummary": "谢谢"}
+      ]
+    }
+  },
+  "messages": {
+    "cid-delivery": {
+      "success": true,
+      "data": {"messages": [{"messageId": "m1", "isSelf": false, "type": "text", "text": "你好，怎么发货"}]}
+    },
+    "cid-price": {
+      "success": true,
+      "data": {"messages": [{"messageId": "m2", "isSelf": false, "type": "text", "text": "最低多少钱，可以便宜吗"}]}
+    }
+  }
+}

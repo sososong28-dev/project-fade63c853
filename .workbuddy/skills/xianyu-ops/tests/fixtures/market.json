@@ -1,0 +1,15 @@
+{
+  "success": true,
+  "data": {
+    "items": [
+      {"item_id": "1", "title": "机械键盘 A", "price": "¥9.9", "want_count": 3, "seller_name": "不应输出", "raw_data": {"token": "不应输出"}},
+      {"item_id": "2", "title": "机械键盘 B", "price": "¥19.9", "want_count": 8},
+      {"item_id": "3", "title": "机械键盘 C", "price": "¥29.9", "want_count": 12},
+      {"item_id": "4", "title": "机械键盘 D", "price": "¥39.9", "want_count": 20},
+      {"item_id": "5", "title": "机械键盘 E", "price": "¥49.9", "want_count": 18},
+      {"item_id": "6", "title": "机械键盘 F", "price": "¥59.9", "want_count": 35},
+      {"item_id": "7", "title": "机械键盘 G", "price": "¥69.9", "want_count": 28},
+      {"item_id": "8", "title": "机械键盘 H", "price": "¥79.9", "want_count": 50}
+    ]
+  }
+}

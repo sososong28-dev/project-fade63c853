@@ -1,0 +1,13 @@
+{
+  "services": [
+    {"name": "backend-web", "url": "http://fixture/8089", "ok": true, "status": 200},
+    {"name": "websocket", "url": "http://fixture/8090", "ok": true, "status": 200},
+    {"name": "scheduler", "url": "http://fixture/8091", "ok": true, "status": 200},
+    {"name": "frontend", "url": "http://fixture/9000", "ok": true, "status": 200}
+  ],
+  "authenticated": true,
+  "accounts": [
+    {"account_id": "account-a", "status": "active", "connected": true},
+    {"account_id": "account-b", "status": "active", "connected": true}
+  ]
+}

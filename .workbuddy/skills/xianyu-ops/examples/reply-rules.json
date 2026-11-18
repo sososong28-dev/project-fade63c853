@@ -1,0 +1,12 @@
+{
+  "availability": {
+    "keywords": ["还在吗", "还有吗", "可以拍吗"],
+    "reply": "在的，{itemTitle}目前还在。你可以先告诉我最关注商品情况还是交付方式。",
+    "risk_level": "low"
+  },
+  "price": {
+    "keywords": ["便宜", "优惠", "小刀", "最低价"],
+    "reply": "价格需要先核对底价和商品情况，我确认后再回复你。",
+    "risk_level": "high"
+  }
+}

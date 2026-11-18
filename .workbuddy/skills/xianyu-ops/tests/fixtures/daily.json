@@ -1,0 +1,35 @@
+{
+  "stats": {
+    "success": true,
+    "data": {
+      "total_accounts": 2,
+      "active_accounts": 2,
+      "total_keywords": 12,
+      "total_orders": 35,
+      "today_reply_count": 18,
+      "yesterday_reply_count": 12
+    }
+  },
+  "today": {
+    "success": true,
+    "data": {"today_orders": 6, "today_shipped": 5, "today_pending": 1, "today_amount": 299.4}
+  },
+  "seller": {
+    "success": true,
+    "data": {
+      "code": "SUCCESS",
+      "data": {
+        "graphBannerBenchData": {
+          "bannerDataList": [
+            {"name": "曝光人数", "data": 1200, "dataStr": "1200", "lastDataStr": "1000", "ratioFormat": "20%", "cycle": "日"}
+          ],
+          "graphDataList": [
+            {"ds": "2026-11-08", "showUv": 1000, "ipvUv": 320, "chatUv": 45, "payOrdCnt": 5, "payAmt": 249.5, "rfdOrdCnt": 0, "rfdAmt": 0},
+            {"ds": "2026-11-09", "showUv": 1200, "ipvUv": 400, "chatUv": 60, "payOrdCnt": 6, "payAmt": 299.4, "rfdOrdCnt": 1, "rfdAmt": 29.9}
+          ]
+        }
+      },
+      "extendInfo": {"realDateRange": ["2026-11-09", "2026-11-09"]}
+    }
+  }
+}
